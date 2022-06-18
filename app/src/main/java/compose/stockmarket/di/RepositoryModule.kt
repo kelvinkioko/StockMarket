@@ -2,8 +2,10 @@ package compose.stockmarket.di
 
 import compose.stockmarket.data.csv.CSVParser
 import compose.stockmarket.data.csv.CompanyListingParser
+import compose.stockmarket.data.csv.IntraDayInfoParser
 import compose.stockmarket.data.repository.StockRepositoryImpl
 import compose.stockmarket.domain.model.CompanyListingModel
+import compose.stockmarket.domain.model.IntraDayInfoModel
 import compose.stockmarket.domain.repository.StockRepository
 import dagger.Binds
 import dagger.Module
@@ -20,6 +22,12 @@ abstract class RepositoryModule {
     abstract fun bindCompanyListingsParser(
         companyListingParser: CompanyListingParser
     ): CSVParser<CompanyListingModel>
+
+    @Binds
+    @Singleton
+    abstract fun bindIntraDayInfoParser(
+        intraDayInfoParser: IntraDayInfoParser
+    ): CSVParser<IntraDayInfoModel>
 
     @Binds
     @Singleton
