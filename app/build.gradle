@@ -5,6 +5,7 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'kotlin-parcelize'
     id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
+    id 'org.jlleitschuh.gradle.ktlint' version '10.2.1'
 }
 
 kotlin {
@@ -32,6 +33,12 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
     }
 
     buildTypes {
@@ -46,6 +53,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    ktlint {
+        disabledRules = ["no-wildcard-imports"]
     }
     buildFeatures {
         compose true
