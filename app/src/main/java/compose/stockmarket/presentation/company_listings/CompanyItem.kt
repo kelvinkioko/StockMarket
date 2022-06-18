@@ -66,8 +66,7 @@ fun CompanyItem(
                     fontWeight = FontWeight.Light,
                     fontSize = 16.sp,
                     color = MaterialTheme.colors.onBackground,
-                    maxLines = 1,
-                    modifier = Modifier.weight(1f)
+                    maxLines = 1
                 )
             }
         }

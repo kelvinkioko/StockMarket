@@ -70,7 +70,7 @@ fun CompanyListingsScreen(
                             .padding(16.dp)
                     )
                     if (item < state.companies.size) {
-                        Divider(modifier = Modifier.padding(16.dp))
+                        Divider(modifier = Modifier.padding(start = 16.dp, end = 16.dp))
                     }
                 }
             }
