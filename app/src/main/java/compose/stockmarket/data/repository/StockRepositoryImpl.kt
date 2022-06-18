@@ -8,19 +8,19 @@ import compose.stockmarket.data.remote.StockApi
 import compose.stockmarket.domain.model.CompanyListingModel
 import compose.stockmarket.domain.repository.StockRepository
 import compose.stockmarket.util.Resource
-import java.io.IOException
-import javax.inject.Inject
-import javax.inject.Singleton
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
+import java.io.IOException
+import javax.inject.Inject
+import javax.inject.Singleton
 
 @Singleton
 class StockRepositoryImpl @Inject constructor(
     val api: StockApi,
     val database: StockDatabase,
     val companyListingParser: CSVParser<CompanyListingModel>
-): StockRepository {
+) : StockRepository {
 
     private val stockDao = database.stockDao
 
@@ -74,9 +74,7 @@ class StockRepositoryImpl @Inject constructor(
                     )
                 )
                 emit(Resource.Loading(isLoading = false))
-
             }
         }
     }
-
 }
