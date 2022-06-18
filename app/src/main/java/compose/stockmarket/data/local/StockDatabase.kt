@@ -9,5 +9,5 @@ import compose.stockmarket.data.local.dao.StockDao
     version = 1
 )
 abstract class StockDatabase : RoomDatabase() {
-    abstract val dao: StockDao
+    abstract val stockDao: StockDao
 }

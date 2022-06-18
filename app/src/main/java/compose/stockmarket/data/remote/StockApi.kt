@@ -1,5 +1,6 @@
 package compose.stockmarket.data.remote
 
+import okhttp3.ResponseBody
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -8,7 +9,7 @@ interface StockApi {
     suspend fun getCompanyListings(
         @Query(value = "function") function: String = FUNCTION,
         @Query(value = "apikey") apiKey: String = API_KEY
-    )
+    ): ResponseBody
 
     companion object {
         const val BASE_URL = "https://www.alphavantage.co/"
