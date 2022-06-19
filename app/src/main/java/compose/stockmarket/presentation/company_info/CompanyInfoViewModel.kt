@@ -24,6 +24,7 @@ class CompanyInfoViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             val symbol = savedStateHandle.get<String>("symbol") ?: return@launch
+            println("Company info symbol $symbol")
             state = state.copy(isLoading = true)
             val companyInfoResult = async { repository.getCompanyInfo(symbol = symbol) }
             val intraDayInfoResult = async { repository.getCompanyIntraDayInfo(symbol = symbol) }
@@ -34,12 +35,14 @@ class CompanyInfoViewModel @Inject constructor(
                         isLoading = result.isLoading,
                         error = null
                     )
-                is Resource.Success ->
+                is Resource.Success -> {
+                    println("Company info ${result.data}")
                     state.copy(
                         isLoading = false,
                         company = result.data,
                         error = null
                     )
+                }
                 is Resource.Error ->
                     state.copy(
                         isLoading = false,
