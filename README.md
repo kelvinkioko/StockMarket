@@ -7,7 +7,7 @@
 ## About
 Learning Jetpack compose hands-on approach
 
-![screenshot](/relative/screenshot/listing.jpg?raw=true "Optional Title")![screenshot][details]
+![screenshot](/screenshot/listing.jpg?raw=true "Optional Title")![screenshot][details]
 
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
