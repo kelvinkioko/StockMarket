@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ForEachOnRange:StockChart.kt$forEach { i -> drawContext.canvas.nativeCanvas.apply { drawText( round(lowerValue + priceStep * i).toString(), 30f, size.height - spacing - i * size.height / 5f, textPaint ) } }</ID>
+    <ID>FunctionNaming:CompanyInformationScreen.kt$@Composable @Destination fun CompanyInformationScreen( symbol: String, companyInfoViewModel: CompanyInfoViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:CompanyItem.kt$@Composable fun CompanyItem( company: CompanyListingModel, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:CompanyListingsScreen.kt$@Composable @Destination(start = true) fun CompanyListingsScreen( navigator: DestinationsNavigator, viewModel: CompanyListingsViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:MainActivity.kt$@Preview(showBackground = true) @Composable fun DefaultPreview()</ID>
+    <ID>FunctionNaming:StockChart.kt$@Composable fun StockChart( infos: List&lt;IntraDayInfoModel> = emptyList(), modifier: Modifier = Modifier, graphColor: Color = Color.Green )</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun StockMarketTheme(content: @Composable () -> Unit)</ID>
+    <ID>InjectDispatcher:CompanyListingParser.kt$CompanyListingParser$IO</ID>
+    <ID>InjectDispatcher:IntraDayInfoParser.kt$IntraDayInfoParser$IO</ID>
+    <ID>LongMethod:CompanyInformationScreen.kt$@Composable @Destination fun CompanyInformationScreen( symbol: String, companyInfoViewModel: CompanyInfoViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:StockChart.kt$@Composable fun StockChart( infos: List&lt;IntraDayInfoModel> = emptyList(), modifier: Modifier = Modifier, graphColor: Color = Color.Green )</ID>
+    <ID>MagicNumber:AppModule.kt$AppModule$60</ID>
+    <ID>MagicNumber:Color.kt$0xFF060D2E</ID>
+    <ID>MagicNumber:Color.kt$0xFFEEEEEE</ID>
+    <ID>MagicNumber:CompanyListingParser.kt$CompanyListingParser$3</ID>
+    <ID>MagicNumber:CompanyListingParser.kt$CompanyListingParser$4</ID>
+    <ID>MagicNumber:IntraDayInfoParser.kt$IntraDayInfoParser$3</ID>
+    <ID>MagicNumber:IntraDayInfoParser.kt$IntraDayInfoParser$4</ID>
+    <ID>MagicNumber:StockChart.kt$100f</ID>
+    <ID>MagicNumber:StockChart.kt$30f</ID>
+    <ID>MagicNumber:StockChart.kt$4</ID>
+    <ID>MagicNumber:StockChart.kt$5</ID>
+    <ID>MagicNumber:StockChart.kt$5f</ID>
+    <ID>MatchingDeclarationName:CoreExtensions.kt$NavGraph : NavGraphSpec</ID>
+    <ID>MaxLineLength:CompanyInformationScreenDestination.kt$CompanyInformationScreenDestination$symbol = navBackStackEntry.arguments?.getString("symbol") ?: throw RuntimeException("'symbol' argument is mandatory, but was not present!")</ID>
+    <ID>MaxLineLength:CompanyInformationScreenDestination.kt$CompanyInformationScreenDestination$symbol = savedStateHandle.get&lt;String>("symbol") ?: throw RuntimeException("'symbol' argument is mandatory, but was not present!")</ID>
+    <ID>NewLineAtEndOfFile:CompanyInformationScreenDestination.kt$compose.stockmarket.presentation.destinations.CompanyInformationScreenDestination.kt</ID>
+    <ID>NewLineAtEndOfFile:CompanyListingsScreenDestination.kt$compose.stockmarket.presentation.destinations.CompanyListingsScreenDestination.kt</ID>
+    <ID>NewLineAtEndOfFile:CoreExtensions.kt$compose.stockmarket.presentation.CoreExtensions.kt</ID>
+    <ID>NewLineAtEndOfFile:NavGraphs.kt$compose.stockmarket.presentation.NavGraphs.kt</ID>
+    <ID>PackageNaming:CompanyInfoState.kt$package compose.stockmarket.presentation.company_info</ID>
+    <ID>PackageNaming:CompanyInfoViewModel.kt$package compose.stockmarket.presentation.company_info</ID>
+    <ID>PackageNaming:CompanyInformationScreen.kt$package compose.stockmarket.presentation.company_info</ID>
+    <ID>PackageNaming:CompanyItem.kt$package compose.stockmarket.presentation.company_listings</ID>
+    <ID>PackageNaming:CompanyListingsEvent.kt$package compose.stockmarket.presentation.company_listings</ID>
+    <ID>PackageNaming:CompanyListingsScreen.kt$package compose.stockmarket.presentation.company_listings</ID>
+    <ID>PackageNaming:CompanyListingsState.kt$package compose.stockmarket.presentation.company_listings</ID>
+    <ID>PackageNaming:CompanyListingsViewModel.kt$package compose.stockmarket.presentation.company_listings</ID>
+    <ID>PackageNaming:StockChart.kt$package compose.stockmarket.presentation.company_info</ID>
+    <ID>PrintStackTrace:StockRepositoryImpl.kt$StockRepositoryImpl$httpException</ID>
+    <ID>PrintStackTrace:StockRepositoryImpl.kt$StockRepositoryImpl$ioException</ID>
+    <ID>SuspendFunWithFlowReturnType:StockRepository.kt$StockRepository$suspend</ID>
+    <ID>SuspendFunWithFlowReturnType:StockRepositoryImpl.kt$StockRepositoryImpl$suspend</ID>
+    <ID>TooGenericExceptionThrown:CompanyInformationScreenDestination.kt$CompanyInformationScreenDestination$throw RuntimeException("'symbol' argument is mandatory, but was not present!")</ID>
+    <ID>UnnecessaryAbstractClass:RepositoryModule.kt$RepositoryModule$RepositoryModule</ID>
+    <ID>UnnecessaryApply:StockChart.kt$apply { drawText( hour.toString(), spacing + i * spacePerHour, size.height - 5, textPaint ) }</ID>
+    <ID>UnnecessaryApply:StockChart.kt$apply { drawText( round(lowerValue + priceStep * i).toString(), 30f, size.height - spacing - i * size.height / 5f, textPaint ) }</ID>
+    <ID>UnusedPrivateMember:StockChart.kt$val nextInfo = infos.getOrNull(i + 1) ?: infos.last()</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$address ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$country ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$description ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$industry ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$name ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$sector ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoMapper.kt$symbol ?: ""</ID>
+    <ID>UseOrEmpty:CompanyInfoViewModel.kt$CompanyInfoViewModel$result.data ?: emptyList()</ID>
+    <ID>WildcardImport:CoreExtensions.kt$import compose.stockmarket.presentation.destinations.*</ID>
+    <ID>WildcardImport:NavGraphs.kt$import compose.stockmarket.presentation.destinations.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
