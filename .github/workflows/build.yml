@@ -78,6 +78,6 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Run assemble task
+      - name: Run detekt task
         run: ./gradlew detekt
 
